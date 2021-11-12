@@ -1,5 +1,5 @@
 {
-	"name": "loopback-connector-firestore",
+	"name": "loopback4-connector-firestore",
 	"version": "1.0.8",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/dyaa/loopback-connector-firestore.git"
+		"url": "git@github.com:ngocbd/loopback4-connector-firestore.git"
 	},
 	"dependencies": {
 		"@google-cloud/firestore": "^4.15.1",
@@ -45,12 +45,13 @@
 		"datasource",
 		"dyaa",
 		"loopback",
+		"loopback4",
 		"strongloop",
 		"firestore",
 		"firebase"
 	],
-	"author": "Dyaa Eldin <mail@dyaa.me> (https://dyaa.me)",
+	"author": "Bui Dinh Ngoc <buidinhngoc.aiti@gmail.com> (https://github.com/ngocbd)",
 	"license": "MIT",
-	"bugs": "https://github.com/dyaa/loopback-connector-firestore/issues",
-	"homepage": "https://github.com/dyaa/loopback-connector-firestore"
+	"bugs": "https://github.com/ngocbd/loopback4-connector-firestore/issues",
+	"homepage": "https://github.com/ngocbd/loopback4-connector-firestore"
 }

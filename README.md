@@ -1,26 +1,22 @@
-# loopback-connector-firestore
-Firebase Firestore connector for the LoopBack framework.
+# loopback4-connector-firestore
+Firebase Firestore connector for the LoopBack4 framework.
 
-[![wercker status](https://app.wercker.com/status/5e9652f63a609040f049a790e98c667a/s/master "wercker status")](https://app.wercker.com/project/byKey/5e9652f63a609040f049a790e98c667a)
-[![npm](https://img.shields.io/npm/dt/loopback-connector-firestore.svg)](https://www.npmjs.com/package/loopback-connector-firestore)
-[![npm](https://img.shields.io/npm/v/loopback-connector-firestore.svg)](https://www.npmjs.com/package/loopback-connector-firestore)
-[![npm](https://img.shields.io/npm/l/loopback-connector-firestore.svg)](https://github.com/dyaa/loopback-connector-firestore)
 
 I needed an easy way to connect a Loopback application to [Firebase][7]'s NoSQL database [Firestore][6] so that i decided to build this connector.
 
 ### Installation
-If you want to know how to get started with Loopback [check this][5].
+If you want to know how to get started with Loopback4 [check this][5].
 
 To add a new data source, use the data source generator:
 ```sh
-lb datasource
+lb4 datasource
 ```
 Then the data source generator will prompt some questions like
 
  - Enter the data-source name: **Firestore** *(Choose your prefered name)*
  - Select the connector for Firestore: **other**
- - Enter the connector's module name **loopback-connector-firestore**
- - Install loopback-connector-firestore (Y/n) **y**
+ - Enter the connector's module name **loopback4-connector-firestore**
+ - Install loopback4-connector-firestore (Y/n) **y**
 
 Then you should use a service account. Go to [Project Settings > Service Accounts][4] in the Google Cloud Platform Console. Generate a new private key and save the JSON file.
 
@@ -51,15 +47,15 @@ And you can actually store those private details as an Environment variables, Ch
 I've got inspired by the Official [MongoDB connector][3] by Loopback
 
 ### License
-
+Copylefted (c) 2021 [Bui Dinh Ngoc][1] Licensed under the [MIT license][2].
 Copylefted (c) 2017 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
 
-  [1]: https://dyaa.me/
-  [2]: https://github.com/dyaa/loopback-connector-firestore/blob/master/LICENSE
+  [1]: https://github.com/ngocbd/
+  [2]: https://github.com/ngocbd/loopback4-connector-firestore/blob/master/LICENSE
   [3]: https://github.com/strongloop/loopback-connector-mongodb/
   [4]: https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts
   [5]: http://loopback.io/getting-started/
   [6]: https://firebase.google.com/products/firestore/
   [7]: https://firebase.google.com
-  [8]: https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration
+  [8]: https://loopback.io/doc/en/lb4
