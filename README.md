@@ -43,6 +43,13 @@ You should fill the application's datasource file which is located in `/server/d
 
 And you can actually store those private details as an Environment variables, Check [source-configuration][8]
 
+
+### Build and test from source
+Download google service json key file to test folder and rename it to config.json
+```
+npm test
+```
+
 ### Inspiration
 I've got inspired by the Official [MongoDB connector][3] by Loopback
 
