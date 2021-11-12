@@ -29,10 +29,10 @@ class Firestore extends Connector {
 		this._models = {};
 
 		const { projectId, clientEmail, privateKey } = dataSourceProps;
-
+		
 		const firestore = new Admin({
 			credentials: {
-				private_key: privateKey!.replace(/\\n/g, '\n'), // eslint-disable-line camelcase
+				private_key: privateKey, // eslint-disable-line camelcase
 				client_email: clientEmail // eslint-disable-line camelcase
 			},
 			projectId
@@ -69,7 +69,7 @@ class Firestore extends Connector {
 
 			callback(null, result);
 		} catch (error) {
-			callback(error);
+			callback(null,error);
 		}
 	};
 
