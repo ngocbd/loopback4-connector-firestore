@@ -141,6 +141,18 @@ describe('Firestore collection', () => {
 		);
 	});
 
+	it('Should Merge attributes for a model instance', done => {
+		Customer.replaceById(
+			customer1.id,
+			{ cities: ['Hanoi','Danang'] },
+			{ validate: true },
+			(err, customer) => {
+				customer.should.have.property('cities').with.lengthOf(2);
+				done(err);
+			}
+		);
+	});
+
 	it('Should delete a document', done => {
 		Customer.destroyAll({ id: customer1.id }, err => {
 			done(err);
